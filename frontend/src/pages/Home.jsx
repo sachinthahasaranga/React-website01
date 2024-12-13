@@ -5,33 +5,26 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Navbar */}
-      <header className="navbar navbar-expand-lg navbar-dark py-3">
-        <div className="container">
-          <a className="navbar-brand" href="#">SPARKHAUS</a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#">Services</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Portfolio</a>
-              </li>
-            </ul>
-            <a href="#" className="btn btn-primary">Book a Call</a>
-          </div>
-        </div>
-      </header>
+      <header className="navbar">
+        {/* Logo */}
+        <a href="#" className="navbar-brand">
+            <img src="/logo.svg" alt="Sparkhaus Logo" />
+            SPARKHAUS
+        </a>
+
+        {/* Navigation Links */}
+        <nav className="navbar-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+
+        {/* CTA Button */}
+        <a href="#contact" className="navbar-cta">Book a Call</a>
+        </header>
+
+
+
 
       {/* Main Section */}
       <section className="main-section">
