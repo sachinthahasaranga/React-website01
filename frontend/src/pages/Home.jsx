@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css"; // Custom CSS for exact styling
+import topRightIcon from "../assets/top-right.png";
 
 const Home = () => {
   return (
@@ -8,8 +9,8 @@ const Home = () => {
       <header className="navbar">
         {/* Logo */}
         <a href="#" className="navbar-brand">
-            <img src="/logo.svg" alt="Sparkhaus Logo" />
-            SPARKHAUS
+            {/* <img src="/logo.svg" alt="Sparkhaus Logo" /> */}
+             SPARKHAUS
         </a>
 
         {/* Navigation Links */}
@@ -32,7 +33,7 @@ const Home = () => {
         <p className="main-subtitle">
             Create experiences, connect audiences and spark ideas that drive your brand forward
         </p>
-        <button className="start-project">Start Project &rarr;</button>
+        <button className="start-project">Start Project <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
     </section>
 
       {/* Showcase Section */}
@@ -51,9 +52,9 @@ const Home = () => {
       <section className="services">
         <h2>Services</h2>
         <div className="d-grid gap-3">
-            <button className="btn btn-outline-light">Web Design & Development &rarr;</button>
-            <button className="btn btn-outline-light">Branding &rarr;</button>
-            <button className="btn btn-outline-light">Social Media Management &rarr;</button>
+            <button className="btn btn-outline-light">Web Design & Development <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
+            <button className="btn btn-outline-light">Branding <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
+            <button className="btn btn-outline-light">Social Media Management <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
         </div>
         </section>
 
@@ -61,7 +62,7 @@ const Home = () => {
         <section className="contact">
         <h2>Speak with us if you'd like to tell your story</h2>
         <p>Seems intriguing? Hop on that call</p>
-        <button className="get-in-touch">Get in Touch &rarr;</button>
+        <button className="get-in-touch">Get in Touch <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
         <div className="mt-4">
             <p>Email: sparkhausdigital@gmail.com</p>
             <p>Phone: +94 777867920, +94 711631003</p>
