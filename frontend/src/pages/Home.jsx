@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"; // Custom CSS for exact styling
 import topRightIcon from "../assets/top-right.png";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -63,11 +64,10 @@ const Home = () => {
         <h2>Speak with us if you'd like to tell your story</h2>
         <p>Seems intriguing? Hop on that call</p>
         <button className="get-in-touch">Get in Touch <img src={topRightIcon} alt="arrow icon" className="icon" /></button>
-        <div className="mt-4">
-            <p>Email: sparkhausdigital@gmail.com</p>
-            <p>Phone: +94 777867920, +94 711631003</p>
-        </div>
         </section>
+
+        {/* footer Section */}
+        <Footer />
 
     </div>
   );

@@ -1,8 +1,23 @@
 /* General Styling */
+
+@font-face {
+  font-family: 'IncompleetaLight';
+  src: url('../assets/fonts/incompleetaLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IncompleetaReguler';
+  src: url('../assets/fonts/IncompleetaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
     background: linear-gradient(to right, #e0dddd, #000000,#000000, #000000, #001f4d);
     color: #fff;
     min-height: 100vh;
@@ -27,13 +42,14 @@ body {
   }
   
   .navbar-brand {
+    font-family: 'IncompleetaReguler', sans-serif;
     display: flex;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .navbar-brand img {
