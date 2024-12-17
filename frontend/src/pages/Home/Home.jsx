@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css"; // Custom CSS for exact styling
-import topRightIcon from "../assets/top-right.png";
-import Footer from "../components/Footer";
+import "./Home.css";
+import topRightIcon from "../../assets/top-right.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,9 +16,10 @@ const Home = () => {
 
         {/* Navigation Links */}
         <nav className="navbar-links">
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
+          <Link to="/services">Services</Link>
+          <Link to="/">Home</Link>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
         </nav>
 
         {/* CTA Button */}
@@ -67,7 +68,6 @@ const Home = () => {
         </section>
 
         {/* footer Section */}
-        <Footer />
 
     </div>
   );

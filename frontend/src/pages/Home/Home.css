@@ -23,6 +23,13 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
   }
+
+  .home-container {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #e0dddd, #000000, #000000, #001f4d);
+    padding: 0 1rem;
+  }  
   
 /* Navbar Styling */
 .navbar {
